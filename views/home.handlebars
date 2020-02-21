@@ -1,0 +1,17 @@
+
+<section>
+    {{#each articles}}
+        <article class="article-teaser">
+            <div class="article-teaser__image">
+                <img src="{{teaserImageUrl}}" onclick="window.location.href='{{fileName}}'">
+            </div>
+            <div class="article-teaser__headline">
+                <h2 onclick="window.location.href='{{fileName}}'">{{headline}}</h2>
+            </div>
+            <div class="article-teaser__text">
+                <p onclick="window.location.href='{{fileName}}'">{{teaserText}}</p>
+            </div>
+
+        </article>
+    {{/each}}
+</section>
